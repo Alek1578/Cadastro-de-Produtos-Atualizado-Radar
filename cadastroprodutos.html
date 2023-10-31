@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/Group 17.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/cadastroprodutos.css" />
+    <title>Cadastro de Produtos | Radar do Brás</title>
+</head>
+
+<body>
+    <div class="areaGeral">
+        <div class="area">
+            <div class="sidebar">
+                <div class="top-area">
+                    <img id="avatar" src="/images/Avatar.png" alt="" srcset="" />
+                    <p>Bem vindo,</p>
+                    <h4>Gabriel H.</h4>
+                </div>
+                <div class="link">
+                    <div class="link-img">
+                        <img id="icons" src="/images/icons.png" alt="" srcset="" />
+                    </div>
+                    <div class="links">
+                        <a class="bold" href="/index.html">Home</a>
+                        <a class="bold" href="/dashboard.html">Dashboard</a>
+                        <a class="campanha" href="/campanhas.html">Campanhas</a>
+                    </div>
+                </div>
+                <div class="uma">
+                    <a class="gerenciar" href="/gerenciamento.html">Gerenciamento</a>
+                </div>
+                <div class="duas">
+                    <a class="semibold" href="#">Users</a>
+                </div>
+
+                <div class="linha">
+                    <hr />
+                    <img src="/images/sair.svg" alt="" />
+                    <a class="sair" href="/login.html">Sair</a>
+                </div>
+            </div>
+        </div>
+        <img class="barra" src="/images/selecionar.svg" alt="" srcset="">
+        <div class="area-2">
+            <header>
+                <img src="/images/codBarras.svg" alt="">
+                <div class="title">
+                    <h2>Cadastro de produtos</h2>
+                    <p>Cadastre informações padrão sobre seus produtos</p>
+                </div>
+                <div class="upload">
+                    <button> + Upload por panilha</button>
+                </div>
+            </header>
+       
+            <div class="area-3">
+                <div class="teste">
+                    <div class="selecionar">
+                        <img type="file" class="upload" src="/images/enviar.svg" onclick="abrirExploradorDeArquivos()"/>
+                        <h2>Selecione as imagens do produto</h2>
+                        <p>Solte os arquivos aqui ou clique para fazer upload</p>
+                        <input type="file" id="fileInput" style="display: none;" onchange="arquivoSelecionado()" />
+                    </div>
+                    <div class="baixo">
+                        <div class="esquerdoB">
+                            <P>Peso:</P>
+                            <input class="peso" type="text" placeholder="Peso" required>
+                            <P class="pesoP">Largura:</P>
+                            <input class="largura" type="" placeholder="Largura" required>
+                            <P class="corP">Cor:</P>
+                            <input class="cor" type="text" placeholder="Cor" required>
+                        </div>
+                        <div class="direitoB">
+                            <P>Altura:</P>
+                            <input class="altura" type="text" placeholder="Altura" required>
+                            <P class="descP">Comprimento:</P>
+                            <input class="comprimento" type="text" placeholder="Comprimento" required>
+                            <P class="estoqueP">Estoque:</P>
+                            <input class="estoque" type="text" placeholder="Estoque" required>
+                        </div>
+                    </div>
+
+                </div>
+
+                <form action="">
+                    <div class="inputs-1">
+                        <p> Nome do produto: </p>
+                        <input class="name" type="text" placeholder="Nome" required>
+                        <p class="desc">Descrição do produto:</p>
+                        <input class="descricao" type="text" placeholder="Descrição" required>
+                    </div>
+                    <div class="inputs-2">
+                        <div class="esquerdo">
+                            <P>Categoria</P>
+                            <input class="cat" type="text" placeholder="Categoria" required>
+                            <P class="descP">Preço com desconto:</P>
+                            <input class="desconto" type="text" placeholder="Preço" required>
+                            <P class="prazoP">Prazo de entrega:</P>
+                            <input class="prazo" type="text" placeholder="Preço" required>
+                        </div>
+                        <div class="direito">
+                            <P>Subcategoria</P>
+                            <input class="sub" type="text" placeholder="Subcategoria" required>
+                            <P class="desc0">Preço sem desconto:</P>
+                            <input class="desconto0" type="text" placeholder="Preço" required>
+                            <P class="minima">Qntd minima de venda:</P>
+                            <input class="minVenda" type="text" placeholder="Preço" required>
+
+                        </div>
+
+                    </div>
+                    <button class="botao">Cadastrar produto</button>
+                </form>
+
+            </div>
+        </div>
+
+        </form>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

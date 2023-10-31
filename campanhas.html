@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/Group 17.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/campanhas.css" />
+    <title>Campanhas | Radar do Brás</title>
+  </head>
+  <body>
+    <div class="area">
+      <div class="sidebar">
+        <div class="top-area">
+          <img id="avatar" src="/images/Avatar.png" alt="" srcset="" />
+          <p>Bem vindo,</p>
+          <h4>Gabriel H.</h4>
+        </div>
+        <div class="link">
+          <div class="link-img">
+            <img id="icons" src="/images/icons.png" alt="" srcset="" />
+          </div>
+          <div class="links">
+            <a class="bold" href="/index.html">Home</a>
+            <a class="bold" href="/dashboard.html">Dashboard</a>
+            <a class="campanha" href="/campanhas.html">Campanhas</a>
+          </div>
+        </div>
+        <div class="uma">
+          <a class="gerenciar" href="/gerenciamento.html">Gerenciamento</a>
+        </div>
+        <div class="duas">
+          <a class="semibold" href="">Users</a>
+        </div>
+
+        <div class="linha">
+          <hr />
+          <img src="/images/sair.svg" alt="" />
+          <a class="sair" href="/login.html">Sair</a>
+        </div>
+      </div>
+      <div class="principal">
+        <div class="main">
+          <h1>Upload | Campanha</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Elit magna mi mauris ac id placerat nisl.
+          </p>
+        </div>
+        
+        <div class="quadrado">
+          <img type="file" class="upload" src="/images/upload.svg" onclick="abrirExploradorDeArquivos()"/>
+          <h3>Clique ou arraste e solte arquivos</h3>
+          <p>
+            Formatos suportados: JPEG, PNG.<br />
+            Tamanho recomendado 220x60px.
+          </p>
+          <input type="file" id="fileInput" style="display: none;" onchange="arquivoSelecionado()" />
+        </div>
+        <h4>Carregando - 3/3 files</h4>
+        
+      <div class="arquivo">
+        <div class="show">
+          <div class="esquerda">
+            <p>your-file-here.PDF</p>
+            <div class="progresso">
+            </div>
+          </div>
+          <img class="apagar" src="/images/fechar.svg" alt="">
+        </div>
+        <span>50%</span>
+        
+        <div class="borda">
+        </div>
+        <h4>Carregados</h4>
+        <div id="elementoparaRemover" class="show2">
+          <p>document-name.PDF</p>
+          <img id="btnRemover" class="delete1" src="/images/delete.svg" alt="">
+        </div>
+        <div id="elementoparaRemover1" class="show3">
+          <p>image-name-goes-here.png</p>
+          <img id="btnRemover1" class="delete" src="/images/delete.svg" alt="">
+        </div>
+      </div>
+        <!-- dffddfd 
+          <div class="calendario">
+            <p>Setembro 2023</p>
+          <img src="/images/dateleft.svg" alt="">
+          <img src="/images/dateright.svg" alt="">
+            <ul class="semanas">
+              <li>Dom</li>
+              <li>Seg</li>
+              <li>Ter</li>
+              <li>Qua</li>
+              <li>Qui</li>
+              <li>Sex</li>
+              <li>Sáb</li>
+            </ul>
+            <ul class="dias">
+              <li>26</li>
+              <li>27</li>
+              <li>28</li>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li>10</li>
+              <li>11</li>
+              <li>12</li>
+              <li>13</li>
+              <li>14</li>
+              <li>15</li>
+              <li>16</li>
+              <li>17</li>
+              <li>18</li>
+              <li>19</li>
+              <li>20</li>
+              <li>21</li>
+              <li>22</li>
+              <li>23</li>
+              <li>24</li>
+              <li>25</li>
+              <li>26</li>
+              <li>27</li>
+              <li>28</li>
+              <li>29</li>
+              <li>30</li>
+              <li>31</li>
+              <li>1</li>
+            </ul>
+          </div>
+          -->
+      </div>
+      <div class="labels">
+        <label>Título do banner:</label>
+        <form action="">
+        <input class="titulo1" type="text" name="text" id="" placeholder="Digite aqui..." required>
+        <label for="Selecione">Posição do banner</label>
+        <input class="titulo2" type="text" placeholder="Selecione" required>
+        <label>Período ativo:</label>
+        <input class="titulo3" type="date" id="data" name="data">
+            <div class="loja">
+              <label for="">Nome da loja</label>
+              <input class="ultimos" type="text" placeholder="Digite aqui..." required>       
+            </div>
+            <div class="campo">
+            <label class="label-email" for="">Email</label>
+              <input class="ultimos" type="email" name="email" placeholder="Digite aqui..." required>
+            </div>
+            <button type="submit">ADICIONAR CAMPANHA</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
